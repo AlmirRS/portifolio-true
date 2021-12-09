@@ -256,7 +256,7 @@ section{
 }
 
 .menu .box-container .box img{
-    height: 10rem;
+    height: 12rem;
     border-radius: 50%;
 }
 
@@ -318,6 +318,7 @@ section{
 
 .products .box-container .box .image img{
     height: 25rem;
+    border-radius: 50%;
 }
 
 .products .box-container .box .content h3{
