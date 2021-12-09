@@ -100,14 +100,14 @@ section{
     padding-bottom: .5rem;
 }
 
-.header .icons div{
+.header .icones div{
     color:#fff;
     cursor: pointer;
     font-size: 2.5rem;
     margin-left: 2rem;
 }
 
-.header .icons div:hover{
+.header .icones div:hover{
     color:var(--main-color);
 }
 
@@ -257,6 +257,7 @@ section{
 
 .menu .box-container .box img{
     height: 10rem;
+    border-radius: 50%;
 }
 
 .menu .box-container .box h3{
@@ -278,7 +279,7 @@ section{
 }
 
 .menu .box-container .box:hover{
-    background:#fff;
+    background:rgb(252, 250, 252);
 }
 
 .menu .box-container .box:hover > *{
@@ -297,7 +298,7 @@ section{
     padding: 2rem;
 }
 
-.products .box-container .box .icons a{
+.products .box-container .box .icones a{
     height: 5rem;
     width: 5rem;
     line-height: 5rem;
@@ -307,7 +308,7 @@ section{
     margin:.3rem;
 }
 
-.products .box-container .box .icons a:hover{
+.products .box-container .box .icones a:hover{
     background:var(--main-color);
 }
 
