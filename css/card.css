@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+    --main-color:#8c0f0f;
+    --black:#13131a;
+    --bg:#010103;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #131114;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(255, 18, 129), rgb(86, 48, 140));
+    clip-path: circle(40% at right 70%);
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#0934c2, #000000);
+    clip-path: circle(30% at 10% 10%);
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%;
+    height: 100%; */
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
+.container .card {
+    position: relative;
+    width: 200px;
+    height: 290px;
+    margin: 10px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+
+.container .card .content {
+    padding: 20px;
+    text-align: center;
+    transform: translateY(20px);
+    opacity: 0.3;
+    transition: 0.5s;
+}
+
+.container .card:hover .content {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.container .card .content h2 {
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    font-size: 38px;
+    color: white;
+    pointer-events: none;
+}
+
+.container .card .content h3 {
+    margin: 5px;
+    font-size: 1.5em;
+    color: rgb(209, 116, 255);
+    z-index: 10;
+}
+.container .card .content p {
+    margin-top: 15px;
+    font-size: 11px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.container .card .content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 30px;
+    background: #fff;
+    color: #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.container .card .content a:hover{
+    
+    font-size: 22px;
+    color: white;
+    background: violet;
+    padding: 10px 25px;
+    margin-top: 20px;
+    font-weight: 700;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.6s;
+}
+
+
+
+
+
